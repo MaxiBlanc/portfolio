@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header> 
+            <div class="logo">
+                <a href="#">Maxi</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">TECNOLOGIAS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <br></br>
+        <br></br>
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Maximiliano Blanc</h1>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/maximiliano-blanc/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/MaxiBlanc" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <br></br>
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <div class="fila">
+                <div class="col">
+                    <br></br>
+                    <p><span>Mi nombre es Maximiliano Blanc ...</span> soy un desarrollador Full Stack, siempre comprometido a la funcion asignada y abierto al trabajo en equipo al valerme de herramientas como las metodologías ágiles y Git. Constantemente dispuesto a aprender y mejorar trabajando, dando lo mejor de mí. Siempre abierto a nuevas ideas a la hora de programar.</p>                        
+                </div>
+            
+                <div class="col">
+                    <img src="img/progsobremi.jpg" width="400px" height="300px" >
+                    </div>
+                </div>
+            </div>
+            
+            <button>
+                <a href="https://github.com/MaxiBlanc" target="_blank">
+                    <h3>
+                        Ver CV
+                    </h3>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <br></br>
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Videogames Page</h3>
+                        <p></p>
+                        <button>codigo <i class="fa fa-code"></i>  </button>
+                        <button>video  <i class="fa-brands fa-youtube">  </i></button>                         
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dogomania</h3>
+                        <p></p>
+                        <button>codigo <i class="fa fa-code"></i>  </button>
+                        <button>video  <i class="fa-brands fa-youtube">  </i></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Smartify</h3>
+                        <p></p>
+                        <button>codigo <i class="fa fa-code"></i>  </button>
+                        <button>video  <i class="fa-brands fa-youtube">  </i></button>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Portfolio</h3>
+                        <p></p>
+                        <button>codigo <i class="fa fa-code"></i>  </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <br></br>
+            <h2>Tecnologias</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/html.png" alt="">
+                    <div class="overlay">
+                        <h3>HTML</h3>                         
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/React.png" alt="">
+                    <div class="overlay">   
+                        <h3>React</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Redux.png" alt="">
+                    <div class="overlay">
+                        <h3>Redux</h3>
+                    </div>
+                </div> 
+                <div class="proyecto">
+                    <img src="img/CSSIcon.png" alt="">
+                    <div class="overlay">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Nodejs.png" alt="">
+                    <div class="overlay">
+                        <h3>NodeJS</h3>                         
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/git.png" alt="">
+                    <div class="overlay">
+                        <h3>Git</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/github.png" alt="">
+                    <div class="overlay">
+                        <h3>GitHub</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/sql.png" alt="">
+                    <div class="overlay">
+                        <h3>PostgreSQL</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/sequelize.webp" alt="">
+                    <div class="overlay">
+                        <h3>Sequelize</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/js.jpg" alt="">
+                    <div class="overlay">
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <h1>Maximiliano Blanc</h1>
+            <br></br>
+                <h3>Full stack Developer</h3>
+                <i class="fa fa-gmail"></i><h3>maxiblanc240801@gmail.com</h3>
+                <h3>Entre Ríos, Argentina</h3>
+                <a href="https://www.linkedin.com/in/maximiliano-blanc/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/MaxiBlanc" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
