@@ -280,29 +280,32 @@ html{
     font-size: 14px;
     line-height: 1.4;
     color: #ccc;
-    margin-bottom: 15px;
-    height: 40px; /* Para que todas las cards queden parejas */
+    margin-bottom: 110px;
+    height: 50px; /* Para que todas las cards queden parejas */
 }
 
 /* Logos de tecnologías pequeños */
 .proyecto-techs {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales sí o sí */
+    gap: 5px;                              /* Bajamos el gap para que respiren */
+    padding-top: 15px;
     border-top: 1px solid #333;
-    padding-top: 10px;
+    margin-bottom: 20px;
+    justify-items: center;                 /* Centra cada icono en su columna */
 }
 
 .tech-mini {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40px;
+    width: 60px;          /* Con 60px entran 5 cómodos en el ancho de tu card */
+    margin-bottom: 10px;  /* Espacio extra entre la fila de arriba y la de abajo */
 }
 
 .tech-mini img {
-    width: 20px !important;
-    height: 20px !important;
+    width: 25px !important; /* Un pelín más grandes para que se luzcan */
+    height: 25px !important;
     margin-bottom: 5px;
 }
 
@@ -310,12 +313,15 @@ html{
     font-size: 9px;
     color: #888;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Botones estilo link */
 .proyecto-botones {
     display: flex;
+    justify-content: center; /* Esta línea centra los botones horizontalmente */
     gap: 10px;
+    margin-bottom: 10px;    /* Opcional: para que no peguen al borde inferior */
 }
 
 .btn-p {
